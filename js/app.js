@@ -14,6 +14,8 @@ let Degree = prompt ('did i study MIS ?', 'YES or NO');
 
 let Exp = prompt ('i never worked before ?', 'YES or NO');
 
+
+ function UserName(){
 switch  (myUsername.toUpperCase()) {
     case 'YES' :
         case 'Y':
@@ -30,8 +32,12 @@ switch  (myUsername.toUpperCase()) {
         console.log('my name is mohammad alzool ? = wrong entry');
         alert('my name is mohammad alzool ? = wrong entry');
         break;
-          }
+          }}
 
+ UserName()
+
+
+ function UserAge(){
 switch  (myAge.toUpperCase()){
     case 'YES':
         case 'Y':
@@ -48,8 +54,12 @@ switch  (myAge.toUpperCase()){
   console.log('iam 30 years old ? = wrong entry');
   alert('iam 30 years old ? = wrong entry');
   break;
-      }
+      }}
+    UserAge();
+    
+    
 
+function UserDgree() {
 switch  (Degree.toUpperCase()){
   case 'NO':
       case 'N':
@@ -66,8 +76,11 @@ switch  (Degree.toUpperCase()){
       console.log('did i study MIS ? = wrong entry');
       alert('did i study MIS ? = wrong entry');
       break;
-        }
+        }}
+UserDgree();
 
+
+function Expo (){
 switch  (Exp.toUpperCase()){
   case 'YES':
       case 'Y':
@@ -84,38 +97,45 @@ switch  (Exp.toUpperCase()){
       console.log('i never worked before ? = wrong entry');
       alert('i never worked before ? = wrong entry');
       break;
-        }
+        }}
+Expo();
+
+
 
 let GuessesNumber = prompt ('guess a number', '1,2,3...999');
 let attempts
 
+
+
+
+function test (){
+  if (GuessesNumber ==127){
+    alert('correct answer');
+    attempts = 0
+    finalScore++ ;
+    
+  }
+  if (attempts ==1){
+    alert('You carried out your attempts , the correct answer was (127)');
+  }
+  else if (GuessesNumber <127){
+    alert('too low');
+    GuessesNumber = prompt ('guess a number again you still have '+(attempts-1) +' attempts left', '1,2,3...999');
+  }
+  else if (GuessesNumber >127){
+    alert('too high');
+    GuessesNumber = prompt ('guess a number again you still have '+(attempts-1) +' attempts left', '1,2,3...999');
+  
+  }
+  
+  else { 
+    alert('wrong entry , please enter numbers only  ')
+    GuessesNumber = prompt ('guess a number again you still have '+(attempts-1) +' attempts left', '1,2,3...999');
+  }
+  
+ }
 for (let attempts=4;attempts>0;--attempts){
- 
-if (GuessesNumber ==127){
-  alert('correct answer');
-  attempts = 0
-  finalScore++
-  break;
-}
-if (attempts ==1){
-  alert('You carried out your attempts , the correct answer was (127)');
-}
-else if (GuessesNumber <127){
-  alert('too low');
-  GuessesNumber = prompt ('guess a number again you still have '+(attempts-1) +' attempts left', '1,2,3...999');
-}
-else if (GuessesNumber >127){
-  alert('too high');
-  GuessesNumber = prompt ('guess a number again you still have '+(attempts-1) +' attempts left', '1,2,3...999');
-
-}
-
-else { 
-  alert('wrong entry , please enter numbers only  ')
-  GuessesNumber = prompt ('guess a number again you still have '+(attempts-1) +' attempts left', '1,2,3...999');
-}
-
-
+ test()
 }
 
 
