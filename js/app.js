@@ -111,7 +111,7 @@ let attempts
 function test (){
   if (GuessesNumber ==127){
     alert('correct answer');
-    attempts = 0
+
     finalScore++ ;
     
   }
@@ -134,7 +134,7 @@ function test (){
   }
   
  }
-for (let attempts=4;attempts>0;--attempts){
+for (attempts=4;attempts>0;--attempts){
  test()
 }
 
@@ -163,3 +163,4 @@ if (t=1) {
 }
 alert('thank you '+ userName + ' for visiting my web page');
 alert('you`r score is '+finalScore+' of 7' );
+
