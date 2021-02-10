@@ -139,4 +139,5 @@ let moviesList=['Pirates of the Caribbean','Inception','Thor','Iron Man','X-Men'
  }
 }
 alert('thank you '+ userName + ' for visiting my web page');
+alert('this is my favorite movies list  (Pirates of the Caribbean, Inception, Thor, Iron Man, X-Men, Limitless, Ex Machina, Avengers, The Hangover Part Suicide Squad)')
 alert('you`r score is '+finalScore+' of 7' );
