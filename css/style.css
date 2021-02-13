@@ -1,8 +1,14 @@
+body{background-image:url(../img/download.jpg);background-repeat:no-repeat;background-attachment:fixed;background-size: cover;}
 h2 {
     text-align: center;
-    color:blue;
+    color:rgb(230, 230, 240);
+    font-family: 'Merienda', cursive;
+}
+h3 {
+    color:rgb(230, 230, 240);
+    font-family: 'Merienda', cursive;
 }
 ul{
-
-    color: cornflowerblue;
+    font-family: 'Lemonada', cursive;
+    color: rgb(178, 179, 180);
 }
